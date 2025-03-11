@@ -1,23 +1,22 @@
-# **Machine Learning Algorithms Comparison 📊**  
+# **Comparison of Machine Learning Classification Algorithms 📊**  
 
 ## **📌 Overview**  
-This repository contains Jupyter Notebooks comparing the performance of various machine learning algorithms on structured datasets. The analysis involves data preprocessing, model training, evaluation, and visualization of results.  
+This repository contains a **Jupyter Notebook** that compares the performance of various **classification algorithms** using different evaluation metrics. The goal is to analyze which algorithms perform best on structured datasets and under different conditions.  
 
 ## **📂 Project Structure**  
 ```
 📦 Machine-learning-algorithms-comparison  
  ┣ 📜 Classification_Algorithms.ipynb  
- ┣ 📜 Regression_Algorithms.ipynb  
  ┣ 📜 README.md  
  ┣ 📜 requirements.txt  
  ┗ 📜 LICENSE  
 ```  
 
 ## **🛠 Features**  
-✔️ **Comparison of Classification Algorithms**  
-✔️ **Comparison of Regression Algorithms**  
-✔️ **Hyperparameter Tuning**  
-✔️ **Performance Metrics (Accuracy, RMSE, R², etc.)**  
+✔️ **Comparison of Multiple Classification Algorithms**  
+✔️ **Hyperparameter Tuning for Model Optimization**  
+✔️ **Performance Metrics: Accuracy, Precision, Recall, F1-Score, ROC-AUC**  
+✔️ **Data Preprocessing and Feature Engineering**  
 ✔️ **Visualizations for Model Evaluation**  
 
 ## **🚀 Getting Started**  
@@ -36,37 +35,20 @@ source env/bin/activate  # On Windows use `env\Scripts\activate`
 pip install -r requirements.txt
 ```
 
-### **📊 Running the Notebooks**  
-Launch Jupyter Notebook and open any of the two notebooks:  
+### **📊 Running the Notebook**  
+Launch Jupyter Notebook and open `Classification_Algorithms.ipynb`:  
 ```bash
 jupyter notebook
 ```
 
-## **📂 Notebooks Overview**  
-
-### **1️⃣ Classification Algorithms**  
-📌 Notebook: `Classification_Algorithms.ipynb`  
-This notebook compares various classification algorithms, including:  
+## **🧠 Classification Algorithms Covered**  
+The notebook compares the following machine learning classification models:  
 - **Logistic Regression**  
 - **Support Vector Machine (SVM)**  
-- **Random Forest**  
+- **Random Forest Classifier**  
 - **Gradient Boosting (XGBoost, LightGBM, CatBoost)**  
 - **k-Nearest Neighbors (k-NN)**  
 - **Naïve Bayes**  
-
-📈 **Metrics Used:** Accuracy, Precision, Recall, F1-Score, ROC-AUC  
-
-### **2️⃣ Regression Algorithms**  
-📌 Notebook: `Regression_Algorithms.ipynb`  
-This notebook compares various regression algorithms, including:  
-- **Linear Regression**  
-- **Ridge & Lasso Regression**  
-- **Decision Tree Regression**  
-- **Random Forest Regression**  
-- **Gradient Boosting (XGBoost, LightGBM, CatBoost)**  
-- **Support Vector Regression (SVR)**  
-
-📉 **Metrics Used:** Mean Squared Error (MSE), Root Mean Squared Error (RMSE), R² Score  
 
 ## **📦 Dependencies**  
 The project utilizes the following Python libraries:  
@@ -74,6 +56,7 @@ The project utilizes the following Python libraries:
 - **Pandas** – Data handling and manipulation  
 - **NumPy** – Numerical computations  
 - **Matplotlib & Seaborn** – Data visualization  
+- **XGBoost, LightGBM, CatBoost** – Boosting algorithms  
 
 Install them using:  
 ```bash
@@ -81,14 +64,14 @@ pip install scikit-learn pandas numpy matplotlib seaborn xgboost lightgbm catboo
 ```
 
 ## **📈 Example Visualizations**  
-- **Confusion Matrix & ROC Curve** – For classification models  
-- **Residual Plots & Feature Importance** – For regression models  
-- **Comparison Bar Charts** – Accuracy & RMSE scores  
+- **Confusion Matrix** – Evaluates model predictions  
+- **ROC Curve & AUC Score** – Assesses classifier performance  
+- **Feature Importance Charts** – Identifies key features affecting predictions  
 
 ## **📝 Results & Applications**  
-- Helps select the **best model** for classification and regression tasks  
-- Useful for **business analytics, medical predictions, and financial forecasting**  
-- Shows trade-offs between **accuracy, interpretability, and computational efficiency**  
+- Helps select the **best classification model** for structured datasets  
+- Useful for **medical predictions, fraud detection, sentiment analysis**  
+- Demonstrates trade-offs between **accuracy, interpretability, and computational cost**  
 
 ## **📜 License**  
 This project is licensed under the **MIT License** – feel free to use and modify it.  
@@ -99,3 +82,4 @@ Contributions are welcome! If you find issues or want to improve the analysis, f
 2. Create a feature branch (`git checkout -b feature-name`)  
 3. Commit changes (`git commit -m "Added new feature"`)  
 4. Push to your fork and submit a **Pull Request**  
+
